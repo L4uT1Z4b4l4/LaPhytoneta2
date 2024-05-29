@@ -1,0 +1,164 @@
+/*General*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/TPO-CaC-La-Pythoneta/Login/Image/fondoolvidarcontraseña.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/*Nav*/
+nav.nav-toggle {
+display: none;
+background: none;
+border: none;
+}
+
+/*Menu*/
+
+.ClassUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.ClassLi {
+    float: left;
+    margin-left: 15%;
+}
+
+.ClassA {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.ClassA:hover {
+    background-color: #111;
+}
+
+/*Formulario*/
+.formulario .box{
+    background-color: transparent;
+    border-color: rgb(50, 50, 50);
+    border: 1px solid rgb(79, 78, 78);
+    padding: 40px 50px;
+    border-radius: 15px;
+}
+
+.formulario .email:focus{
+    outline: none;
+}
+
+.formulario{
+    min-height: 100vh;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px
+}
+
+p{
+    text-align: center;
+}
+
+.mail .email{
+    display: block;
+    height: 30px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(116, 116, 116);
+    color: rgb(0, 2, 39);
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.formulario .boton{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: rgb(87, 165, 198);
+    border: none;
+    position: relative;
+    color: rgb(7, 8, 40);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.formulario .boton::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: background-color 1s ease;
+    z-index: -1;
+}
+
+.formulario .boton:hover::before{
+    background-color: rgb(209, 233, 255);
+    border-radius: 25px;
+}
+
+/*Footer*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: skyblue;
+    color: white;
+    line-height: 25px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ubicacion {
+    display: flex;
+    align-items: flex-start;
+}
+
+.iconos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.icono_item {
+    margin: 5px;
+    color: white;
+}
+
+.icono_item:hover {
+    color: #fec195;
+}
